@@ -18,12 +18,14 @@ const UploadForm = () => {
     }
   };
   return (
+
+    <div class="upload">
     <form>
 
     <label>
       <input type="file" onChange={changeHandler} />
       <br/>
-          <span>+</span>
+          <button class="btn" >+</button>
 
           </label>
       <div className="output">
@@ -32,6 +34,7 @@ const UploadForm = () => {
         {file && <ProgressBar file= {file} setFile={setFile}/>}
       </div>
     </form>
+    </div>
   );
 };
 

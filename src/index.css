@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
 
+
+* {
+
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 :root{
  
 --primary: var(#efb6b2);
@@ -16,11 +25,20 @@ font-family: 'Questrial', sans-serif;
 
 }
 
-.App{
+/* .App{
   max-width: 960px;
   margin: 0 auto; 
+  background-color: rosybrown;
   
+  } */
+
+  .title {
+
+    text-align: center;
+
   }
+
+
 
   .title h1{
 
@@ -29,8 +47,23 @@ font-family: 'Questrial', sans-serif;
   .title h2{
 
     color: var(--error);
-margin-top: 50px;
 
+  }
+
+
+  .upload .btn {
+
+  margin-top: 2rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transition: .3s;
+  outline: none;
+  font-size: 2rem;
+  background-color: #0000b3;
+  border: none;
+  color: #f1f1f1;
+  margin-left: 50px
   }
 
   .progress-Bar{
@@ -63,4 +96,5 @@ margin-top: 50px;
   position: absolute;
   top: 0;
   left: 0;
+  
 }
