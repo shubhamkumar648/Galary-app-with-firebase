@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-import { projectStore } from "../firebase/config";
+import { projectStore } from "../firebase/firebase";
 
 const UseFirestore = (collection) => {
   const [docs, setDocs] = useState([]);

@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { projectStorage,projectStore,timestamp} from "../firebase/config";
+import { projectStorage,projectStore,timestamp} from "../firebase/firebase";
 
 const UseStorage = (file) => {
   const [error, setError] = useState(null);

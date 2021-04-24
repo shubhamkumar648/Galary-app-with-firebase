@@ -4,7 +4,7 @@ import UseStorage from '../hooks/UseStorage'
 const ProgressBar = ({file,setFile}) => {
 
     const {url,progress} = UseStorage(file)
-     console.log(url,progress)
+    //  console.log(url,progress)
 
      useEffect(()=>{
 
@@ -16,7 +16,7 @@ const ProgressBar = ({file,setFile}) => {
 
 return (
 
-<div className = "progress-Bar" style={{width: progress + '%'}}>
+<div className ="progress-Bar" style= {{ height:'5px',background: 'red', width: progress + '%'}}>
 
   <p>Progress</p>
  
