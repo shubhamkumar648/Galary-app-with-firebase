@@ -41,39 +41,68 @@ font-family: 'Questrial', sans-serif;
 
 
   .title h1{
-
-    color: var(--secondary);
+   color: var(--secondary);
   }
+
   .title h2{
+   color: var(--error);
+   }
 
-    color: var(--error);
-
+  
+   form{
+    margin: 30px auto 10px;
+    text-align: center;
   }
+  label input{
+    height: 0;
+    width: 0;
+    opacity: 0;
+  }
+  label{
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--primary);
+    border-radius: 50%;
+    margin: 10px auto;
+    line-height: 30px;
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 24px;
+  }
+  label:hover{
+    background: pink;
+    color: white;
+  }
+  .output{
+    height: 60px;
+    font-size: 0.8rem;
+  }
+  .error{
+    color: var(--error);
+  }
+  
 
 
-  .upload .btn {
 
-  margin-top: 2rem;
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  transition: .3s;
-  outline: none;
-  font-size: 2rem;
-  background-color: #0000b3;
-  border: none;
-  color: #f1f1f1;
-  margin-left: 50px
+
+  
+
+   /* .upload {
+
+    margin: 0 auto
+    
   }
 
   .progress-Bar{
+
     height: 5px;
     background: var(--primary);
     margin-top: 20px;
-  }
 
-  /* image grid styles */
-.img-grid{
+  } */
+
+ .img-grid{
   margin: 20px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -85,16 +114,40 @@ font-family: 'Questrial', sans-serif;
   overflow: hidden;
   height: 0;
   padding: 50% 0;
-  /* padding controls height, will always be perfectly square regardless of width */
   position: relative;
   opacity: 0.8;
 }
 .img-wrap img{
   min-width: 100%;
   min-height: 100%;
-  max-width: 150%;
+  max-width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   
+} 
+
+
+/* 
+.image-grid
+{
+    padding-top:2rem;
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
+.image-card
+{
+    
+    padding:0.5rem;
+    background-color: white;
+    box-shadow: 5px 5px 5px #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: space-between;
+    margin-bottom: 1rem;
+    
+/* }  */

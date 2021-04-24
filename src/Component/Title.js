@@ -4,9 +4,8 @@ const Title = () => {
   return(
   
   <div className = "title">
-   <h1>photoGram</h1>
+   <h1 style={{float:"left"}}>photoGram</h1>
    <h2>Add your favourite picture</h2>
-   <p> welcome to Galary app</p>
 
   </div>
   )
